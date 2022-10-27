@@ -1,0 +1,73 @@
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (main)
+$ git init
+Initialized empty Git repository in C:/Users/ACER/Desktop/Learn_git/.git/
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git add .
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) 86b8fef] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt.docx
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ touch forth.txt
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git add .
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git commit -m 'adding fourth.txt"
+> git commit -m 'adding fourth.txt'
+> ^C
+
+
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git commit -m "test"
+[master 68bdbc1] test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 forth.txt
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ rm third.txt
+rm: cannot remove 'third.txt': Is a directory
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ ^C
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git rm third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git rm 'third.txt'
+fatal: pathspec 'third.txt' did not match any files
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git add .
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git commit -m "removing third.txt"
+[master 6f0567f] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt.docx
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git remote add origin https://github.com/2022-IT/checkpointgitt.git
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 643 bytes | 214.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2022-IT/checkpointgitt.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ACER@DESKTOP-VCPMNBS MINGW64 ~/Desktop/Learn_git (master)
+$
